@@ -1,0 +1,173 @@
+html {
+    height: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Navbar Stuff*/
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px;
+    grid-template-areas:
+    "about store . gmail images menu sign-in";
+    opacity: 0.75;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+
+#store {
+    grid-area: store;
+     justify-self: center;
+    align-self: center;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+}
+
+#sign-in {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+}
+
+/*Main Stuff*/
+#main {
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 230px 65px 100px 200px;
+    grid-template-areas:
+    ". googlelogo ."
+    ". searchbar ."
+    ". buttons ."
+    ". google-text .";
+}
+
+#googlelogo {
+    grid-area: googlelogo;
+    justify-self: center;
+    align-self: end;
+}
+
+#searchbar {
+    grid-area: searchbar;
+    height: 40px;
+    border: 1px solid rgba(185, 185, 185, 0.5);
+    border-radius: 25px 25px 25px 25px;
+    padding-left: 37px;
+    align-self: end;
+    font-size: 16px;
+    outline-width: 0;
+}
+
+#searchbar:hover {
+    box-shadow: 1px 1px grey;
+    outline-width: 0;
+}
+
+#searchbar:active {
+    box-shadow: 1px 1px grey;
+    outline-width: 0;
+}
+
+#searchicon {
+    position: absolute;
+    left: 480px;
+    top: 290px;
+    height: 25px;
+    width: 25px;
+}
+
+#buttons {
+    grid-area: buttons;
+    justify-self: center;
+    align-self: center;
+}
+
+#buttons button {
+    padding: 0 16px;
+    margin: auto 4px;
+    border-radius: 5px 5px 5px 5px;
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #5F6368;
+    font-size: 13px;
+}
+
+#buttons button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#google-text {
+    grid-area: google-text;
+    justify-self: center;
+    align-self: start;
+}
+
+#rndmlnk {
+    color: rgba(0, 0, 255, 0.75);
+    font-size: 14px;
+}
+
+/*Footer Stuff*/
+#footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    height: 40px;
+    opacity: 0.75;
+}
+
+#leftfooter {
+    float: left;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+#rightfooter {
+    float: right;
+    margin-right: 30px; 
+    padding: 10px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+#footerbtn {
+    margin: 20px 10px;
+    font-size: 14px;
+    opacity: 0.75;
+}
